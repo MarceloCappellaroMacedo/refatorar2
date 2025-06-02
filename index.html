@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babilônia - O Berço da Civilização</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: '#8B4513',
+                        lightBrown: '#CD853F',
+                        cream: '#FAF0E6',
+                        dark: '#2F4F4F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="navbar bg-brown text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="#" class="text-2xl font-bold">BABILÔNIA</a>
+                <button class="md:hidden navbar-toggler" type="button" id="navbarToggle">
+                    <span class="block w-6 h-0.5 bg-white my-1"></span>
+                    <span class="block w-6 h-0.5 bg-white my-1"></span>
+                    <span class="block w-6 h-0.5 bg-white my-1"></span>
+                </button>
+                <div class="hidden md:flex" id="navbarMenu">
+                    <ul class="flex space-x-6">
+                        <li><a href="#historia" class="hover:text-lightBrown transition">História</a></li>
+                        <li><a href="#maravilhas" class="hover:text-lightBrown transition">Maravilhas</a></li>
+                        <li><a href="#galeria" class="hover:text-lightBrown transition">Galeria</a></li>
+                        <li><a href="#contato" class="hover:text-lightBrown transition">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero relative min-h-[80vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Ishtar_Gate_at_Berlin_Museum.jpg/1200px-Ishtar_Gate_at_Berlin_Museum.jpg')">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex justify-center">
+                <div class="text-center text-white p-6 bg-black bg-opacity-70 rounded-lg max-w-4xl">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Descubra os Segredos da Antiga Babilônia</h1>
+                    <p class="text-xl mb-8">Explore a civilização que deu ao mundo a escrita cuneiforme, o Código de Hamurabi e as lendárias Jardins Suspensos</p>
+                    <a href="#historia" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition">Explorar História</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História Section -->
+    <section class="py-12 bg-gray-100" id="historia">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">A Glória da Babilônia</h2>
+                <p class="text-xl text-gray-700">Conheça os aspectos mais marcantes desta civilização milenar</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden h-full">
+                    <div class="p-6 text-center">
+                        <i class="bi bi-book text-5xl text-brown mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3">Código de Hamurabi</h3>
+                        <p class="text-gray-700 mb-4">O primeiro conjunto de leis escritas conhecido, estabelecido pelo rei Hamurabi por volta de 1750 a.C.</p>
+                        <button class="btn-outline-brown border border-brown text-brown hover:bg-brown hover:text-white px-4 py-2 rounded-lg transition" data-bs-toggle="popover" title="Código de Hamurabi" data-bs-content="Contém 282 artigos esculpidos em um monumento de diorito. Princípio de 'olho por olho'.">
+                            Saber mais
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden h-full">
+                    <div class="p-6 text-center">
+                        <i class="bi bi-flower1 text-5xl text-brown mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3">Jardins Suspensos</h3>
+                        <p class="text-gray-700 mb-4">Considerada uma das Sete Maravilhas do Mundo Antigo, com terraços elevados e vegetação exuberante.</p>
+                        <button class="btn-outline-brown border border-brown text-brown hover:bg-brown hover:text-white px-4 py-2 rounded-lg transition" data-bs-toggle="popover" title="Jardins Suspensos" data-bs-content="Possivelmente construídos pelo rei Nabucodonosor II para sua esposa Amitis.">
+                            Saber mais
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden h-full">
+                    <div class="p-6 text-center">
+                        <i class="bi bi-door-open text-5xl text-brown mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3">Porta de Ishtar</h3>
+                        <p class="text-gray-700 mb-4">Monumental entrada para a cidade, adornada com tijolos vidrados azuis e relevos de dragões e touros.</p>
+                        <button class="btn-outline-brown border border-brown text-brown hover:bg-brown hover:text-white px-4 py-2 rounded-lg transition" data-bs-toggle="popover" title="Porta de Ishtar" data-bs-content="Símbolos dos deuses Marduk e Adad. Reconstruída no Museu de Berlim.">
+                            Saber mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section class="py-12 bg-cream" id="galeria">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Galeria Babilônica</h2>
+                <p class="text-xl text-gray-700">Imagens que contam a história desta grande civilização</p>
+            </div>
+            
+            <div class="carousel relative overflow-hidden rounded-lg shadow-xl max-w-4xl mx-auto">
+                <div class="carousel-inner relative w-full overflow-hidden">
+                    <div class="carousel-item active relative float-left w-full">
+                        <img src="fotos/codigohamurabi.png" class="block w-full h-96 md:h-[500px] object-cover" alt="Código de Hamurabi">
+                        <div class="carousel-caption absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg">
+                            <h5 class="text-xl font-bold">Código de Hamurabi</h5>
+                            <p>Museu do Louvre</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="carousel-control-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maravilhas Section -->
+    <section class="py-16 bg-dark text-white text-center" id="maravilhas">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Maravilhas da Babilônia</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Junte-se a nossa expedição virtual e descubra os mistérios desta civilização que moldou o mundo antigo.</p>
+            <button class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition" id="guiaBtn">
+                Receber Guia Gratuito
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="guiaModal">
+        <div class="modal-dialog bg-white rounded-lg shadow-xl max-w-md w-full mx-4">
+            <div class="modal-content">
+                <div class="modal-header flex justify-between items-center border-b p-4">
+                    <h5 class="modal-title text-xl font-bold">Receba seu Guia Gratuito</h5>
+                    <button type="button" class="close text-2xl" id="closeModal">&times;</button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="guiaForm">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Seu Nome</label>
+                            <input type="text" class="w-full px-3 py-2 border rounded-lg" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Seu Email</label>
+                            <input type="email" class="w-full px-3 py-2 border rounded-lg" required>
+                        </div>
+                        <button type="submit" class="w-full bg-brown hover:bg-lightBrown text-white font-bold py-2 px-4 rounded-lg transition">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-brown text-white text-center" id="contato">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-6">BABILÔNIA</h3>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="hover:text-lightBrown transition"><i class="bi bi-facebook text-2xl"></i></a>
+                <a href="#" class="hover:text-lightBrown transition"><i class="bi bi-twitter text-2xl"></i></a>
+                <a href="#" class="hover:text-lightBrown transition"><i class="bi bi-instagram text-2xl"></i></a>
+                <a href="#" class="hover:text-lightBrown transition"><i class="bi bi-youtube text-2xl"></i></a>
+            </div>
+            <p class="mb-0">© 2023 Babilônia - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar toggle for mobile
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('hidden');
+            navbarMenu.classList.toggle('flex');
+        });
+
+        // Modal functionality
+        const guiaBtn = document.getElementById('guiaBtn');
+        const guiaModal = document.getElementById('guiaModal');
+        const closeModal = document.getElementById('closeModal');
+        
+        guiaBtn.addEventListener('click', () => {
+            guiaModal.classList.remove('hidden');
+        });
+        
+        closeModal.addEventListener('click', () => {
+            guiaModal.classList.add('hidden');
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === guiaModal) {
+                guiaModal.classList.add('hidden');
+            }
+        });
+
+        // Simple carousel functionality (would need enhancement for full features)
+        // Popover functionality would need to be implemented similarly
+    </script>
+</body>
+</html>

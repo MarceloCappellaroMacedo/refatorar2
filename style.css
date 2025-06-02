@@ -1,0 +1,35 @@
+/* Podemos eliminar quase tudo pois usamos Tailwind, mantendo apenas o que não pode ser feito com Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Carousel animations (simplified) */
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+/* Transition effects */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+    }
+    
+    .text-6xl {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+}
